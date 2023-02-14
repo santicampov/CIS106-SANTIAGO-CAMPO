@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="santi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-13 04:26:36 PM"/>
+        <attribute name="created" value="c2FudGk7TEFQVE9QLVRHU0xURkkwOzIwMjMtMDItMTM7MDQ6MDQ6MzYgUE07MjkxNQ=="/>
+        <attribute name="edited" value="c2FudGk7TEFQVE9QLVRHU0xURkkwOzIwMjMtMDItMTM7MDQ6MjY6MzYgUE07MTszMDI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PURCHASEPRICE" type="Real" array="False" size=""/>
+            <declare name="CURRENTVALUE" type="Real" array="False" size=""/>
+            <declare name="QUANTITY" type="Real" array="False" size=""/>
+            <declare name="NETGAINLOSS" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter the value of the stock at the time you purchased it.&quot;" newline="True"/>
+            <input variable="PURCHASEPRICE"/>
+            <output expression="&quot;Please enter the stock's current price.&quot;" newline="True"/>
+            <input variable="CURRENTVALUE"/>
+            <output expression="&quot;Please enter the quantity of stocks you purchased.&quot;" newline="True"/>
+            <input variable="QUANTITY"/>
+            <assign variable="NETGAINLOSS" expression="(CURRENTVALUE - PURCHASEPRICE) * QUANTITY"/>
+            <output expression="&quot;The overall net gain (or loss if negative number) is: &quot; &amp;NETGAINLOSS &amp;&quot; dollars.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

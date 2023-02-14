@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="santi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-13 03:51:38 PM"/>
+        <attribute name="created" value="c2FudGk7TEFQVE9QLVRHU0xURkkwOzIwMjMtMDItMTM7MDM6Mjg6MzEgUE07MjkxNQ=="/>
+        <attribute name="edited" value="c2FudGk7TEFQVE9QLVRHU0xURkkwOzIwMjMtMDItMTM7MDM6NTE6MzggUE07MTszMDI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="EXAM1" type="Real" array="False" size=""/>
+            <declare name="EXAM2" type="Real" array="False" size=""/>
+            <declare name="EX1TOTAL" type="Real" array="False" size=""/>
+            <declare name="EX2TOTAL" type="Real" array="False" size=""/>
+            <declare name="FINALTOTAL" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter your first exam score.&quot;" newline="True"/>
+            <input variable="EXAM1"/>
+            <output expression="&quot;Please enter your second exam score.&quot;" newline="True"/>
+            <input variable="EXAM2"/>
+            <assign variable="EX1TOTAL" expression="EXAM1 * 0.6"/>
+            <assign variable="EX2TOTAL" expression="EXAM2 * 0.4"/>
+            <assign variable="FINALTOTAL" expression="EX1TOTAL + EX2TOTAL"/>
+            <output expression="&quot;You total weighted exam score is: &quot; &amp;FINALTOTAL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
